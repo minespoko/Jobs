@@ -512,9 +512,9 @@ public class Placeholder {
                 case plimit_tleft_$1:
                     return CMITimeManager.to24hourShort(user.getPaymentLimit().getLeftTime(CurrencyType.getByName(keyValue)));
                 case user_jlevel_$1:
-                    return j == null ? "0" : j.getLevelFormatted();
+                    return j == null ? "" : j.getLevelFormatted();
                 case user_jexp_$1:
-                    return j == null ? "0" : format.format(j.getExperience());
+                    return j == null ? "" : format.format(j.getExperience());
                 case user_jmexp_$1:
                     return j == null ? "0" : format.format(j.getMaxExperience() - j.getExperience());
                 case user_jprogress_$1:
